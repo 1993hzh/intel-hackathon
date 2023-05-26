@@ -23,6 +23,17 @@ Day：天数。
 Time of Day：一天中的时间。
 Target：目标变量，可能是水质等级或其他评价水质的标准。
 
+pH：水的酸碱度能够影响生物生存的环境，过高或过低的pH都可能影响水质。
+Iron, Lead, Zinc, Copper, Manganese：这些重金属的浓度过高可能会对人类和环境产生毒性影响，因此它们的浓度是评价水质的重要指标。
+Nitrate, Chloride, Sulfate：这些离子的浓度可能反映水源的污染程度。例如，高硝酸盐水平可能来源于农田排水，这可能影响水质。
+Color, Odor：这些是水质感官属性，与水质直接相关。例如，不正常的颜色或气味可能表示有污染物存在。
+Turbidity：水的浑浊度可能表明有悬浮颗粒或溶解固体存在，这些可能会影响水质。
+Fluoride, Chlorine：虽然适量的氟和氯对人体有益，但过量则可能导致健康问题。
+Total Dissolved Solids：这是一个广义的度量，表示水中的总溶解固体含量，它可能与水质有关。
+Source：水源可能影响水质，因为不同的源头可能存在不同的污染物。
+Water Temperature, Air Temperature：温度可能影响水中的化学反应和溶解度，从而影响水质。
+Month, Day, Time of Day：这些时间因素可能影响水质，因为某些污染事件可能在特定的时间发生（例如，农业排水可能在特定季节更为严重）。
+
 ## Prerequisites
 Upgrade packages
 
