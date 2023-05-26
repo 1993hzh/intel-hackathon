@@ -1,3 +1,28 @@
+## Column Explanation
+pH：水的pH值。
+Iron：水中铁的含量。
+Nitrate：水中硝酸盐的含量。
+Chloride：水中氯化物的含量。
+Lead：水中铅的含量。
+Zinc：水中锌的含量。
+Color：水的颜色。
+Turbidity：水的浑浊度。
+Fluoride：水中氟化物的含量。
+Copper：水中铜的含量。
+Odor：水的气味。
+Sulfate：水中硫酸盐的含量。
+Conductivity：水的电导率。
+Chlorine：水中氯的含量。
+Manganese：水中锰的含量。
+Total Dissolved Solids：水中的总溶解固体含量。
+Source：水源。
+Water Temperature：水的温度。
+Air Temperature：空气温度。
+Month：月份。
+Day：天数。
+Time of Day：一天中的时间。
+Target：目标变量，可能是水质等级或其他评价水质的标准。
+
 ## Prerequisites
 Upgrade packages
 
