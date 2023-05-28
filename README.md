@@ -100,3 +100,24 @@ oneAPI提供统一的编程模型和工具,从数据到部署实现端到端的�
 - Intel® Distribution for Python
 - Intel® Distribution of Modin
 - Intel® Neural Compressor
+
+
+## Test Result
+
+1. Exclude: ['Index', 'Month', 'Day', 'Time of Day', 'Air Temperature']
+    > SVC: Test F1 accuracy: 70.98%, AUC: 0.85827
+    > XGB: Test F1 accuracy: 81.30%, AUC: 0.91964
+    > RFC: Test F1 accuracy: 82.68%, AUC: 0.91699
+    > NN:  Test F1 accuracy: 78.78%, AUC: 0.90347
+
+2. Exclude: ['Index', 'Month', 'Day', 'Time of Day', 'Air Temperature', 'Source', 'Conductivity', 'Water Temperature']
+    > SVC: Test F1 accuracy: 71.44%, AUC: 0.85785
+    > XGB: Test F1 accuracy: 80.84%, AUC: 0.91689
+    > RFC: Test F1 accuracy: 82.64%, AUC: 0.91721
+    > NN:  Test F1 accuracy: 78.85%, AUC: 0.89936
+    
+3. Exclude: ['Index', 'Month', 'Day', 'Time of Day', 'Air Temperature', 'Source', 'Conductivity', 'Water Temperature', 'pH', 'Lead']
+    > SVC: Test F1 accuracy: 71.42%, AUC: 0.85588
+    > XGB: Test F1 accuracy: 80.45%, AUC: 0.91030
+    > RFC: Test F1 accuracy: 81.28%, AUC: 0.90838
+    > NN:  Test F1 accuracy: 78.43%, AUC: 0.89041
