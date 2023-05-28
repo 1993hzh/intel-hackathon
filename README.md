@@ -1,4 +1,5 @@
 ## Column Explanation
+```
 pH：水的pH值。
 Iron：水中铁的含量。
 Nitrate：水中硝酸盐的含量。
@@ -33,6 +34,7 @@ Total Dissolved Solids：这是一个广义的度量，表示水中的总溶解�
 Source：水源可能影响水质，因为不同的源头可能存在不同的污染物。
 Water Temperature, Air Temperature：温度可能影响水中的化学反应和溶解度，从而影响水质。
 Month, Day, Time of Day：这些时间因素可能影响水质，因为某些污染事件可能在特定的时间发生（例如，农业排水可能在特定季节更为严重）。
+```
 
 ## Prerequisites
 Upgrade packages
@@ -40,6 +42,12 @@ Upgrade packages
 ```sh
 pip install pip-review
 pip-review --auto
+```
+
+Install modin Ray engine
+
+```sh
+pip install "modin[all]"
 ```
 
 ## Description - To Be Refined
@@ -104,20 +112,13 @@ oneAPI提供统一的编程模型和工具,从数据到部署实现端到端的�
 
 ## Test Result
 
-1. Exclude: ['Index', 'Month', 'Day', 'Time of Day', 'Air Temperature']
+1. Selected: ['Color', 'Turbidity', 'Copper', 'Manganese', 'Chloride', 'Iron','Fluoride', 'Nitrate',
+                'Odor', 'Chlorine', 'Sulfate', 'Total Dissolved Solids', 'Zinc', 'pH']
     > SVC: Test F1 accuracy: 70.98%, AUC: 0.85827
+    >
     > XGB: Test F1 accuracy: 81.30%, AUC: 0.91964
+    >
     > RFC: Test F1 accuracy: 82.68%, AUC: 0.91699
+    >
     > NN:  Test F1 accuracy: 78.78%, AUC: 0.90347
 
-2. Exclude: ['Index', 'Month', 'Day', 'Time of Day', 'Air Temperature', 'Source', 'Conductivity', 'Water Temperature']
-    > SVC: Test F1 accuracy: 71.44%, AUC: 0.85785
-    > XGB: Test F1 accuracy: 80.84%, AUC: 0.91689
-    > RFC: Test F1 accuracy: 82.64%, AUC: 0.91721
-    > NN:  Test F1 accuracy: 78.85%, AUC: 0.89936
-    
-3. Exclude: ['Index', 'Month', 'Day', 'Time of Day', 'Air Temperature', 'Source', 'Conductivity', 'Water Temperature', 'pH', 'Lead']
-    > SVC: Test F1 accuracy: 71.42%, AUC: 0.85588
-    > XGB: Test F1 accuracy: 80.45%, AUC: 0.91030
-    > RFC: Test F1 accuracy: 81.28%, AUC: 0.90838
-    > NN:  Test F1 accuracy: 78.43%, AUC: 0.89041
